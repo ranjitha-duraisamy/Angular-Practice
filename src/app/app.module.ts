@@ -7,6 +7,9 @@ import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { ViewListComponent } from './view-list/view-list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { DirectivesComponent } from './directives/directives.component';
     WarningAlertComponent,
     SuccessAlertComponent,
     DataBindingComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    ParentComponent,
+    ChildComponent,
+    ViewListComponent
   ],
   imports: [
     BrowserModule,

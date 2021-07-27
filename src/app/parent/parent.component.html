@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-xs-12">
+        <app-child (save)="onSubmit($event)">
+            <p>Checking content projection</p>
+        </app-child>
+        <div class="mt-3">
+            <h5>Title List</h5>
+            <app-view-list [titles]="titles"></app-view-list>
+        </div>
+    </div>
+</div>

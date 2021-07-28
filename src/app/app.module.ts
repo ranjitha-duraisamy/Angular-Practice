@@ -10,6 +10,7 @@ import { DirectivesComponent } from './directives/directives.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { ViewListComponent } from './view-list/view-list.component';
+import { BackgroundStyleDirective } from './background-style.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ViewListComponent } from './view-list/view-list.component';
     DirectivesComponent,
     ParentComponent,
     ChildComponent,
-    ViewListComponent
+    ViewListComponent,
+    BackgroundStyleDirective
   ],
   imports: [
     BrowserModule,

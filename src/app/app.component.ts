@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-practice';
+  numbersArr: number[] = [1, 2, 3, 4];
 }

@@ -13,6 +13,10 @@
     <h5>Component Communication</h5>
     <hr>
     <app-parent></app-parent>
-    <p appBackgroundStyle>This paragraph is highlighted using directive</p>
+    <p appBackgroundStyle [defaultColor]="'transparent'" [highlightColor]="'yellow'">This paragraph is highlighted using directive</p>
+    <hr>
+    <ng-template [appIterator]="numbersArr" let-item = "item">
+      <p>{{item}}</p>
+    </ng-template>
   </div>
 </div>

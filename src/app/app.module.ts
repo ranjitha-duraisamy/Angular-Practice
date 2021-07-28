@@ -11,6 +11,8 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { ViewListComponent } from './view-list/view-list.component';
 import { BackgroundStyleDirective } from './background-style.directive';
+import { UnlessDirective } from './unless.directive';
+import { IteratorDirective } from './iterator.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { BackgroundStyleDirective } from './background-style.directive';
     ParentComponent,
     ChildComponent,
     ViewListComponent,
-    BackgroundStyleDirective
+    BackgroundStyleDirective,
+    UnlessDirective,
+    IteratorDirective
   ],
   imports: [
     BrowserModule,

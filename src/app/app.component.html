@@ -15,8 +15,24 @@
     <app-parent></app-parent>
     <p appBackgroundStyle [defaultColor]="'transparent'" [highlightColor]="'yellow'">This paragraph is highlighted using directive</p>
     <hr>
+    <h5>Custom structural Directive</h5>
     <ng-template [appIterator]="numbersArr" let-item = "item">
       <p>{{item}}</p>
     </ng-template>
+    <hr>
+    <h5>ngSwitch Directive</h5>
+    <hr>
+    <div [ngSwitch]="selectedNumber">
+      <div *ngSwitchCase="1">One</div>
+      <div *ngSwitchCase="2">Two</div>
+      <div *ngSwitchCase="3">Three</div>
+      <div *ngSwitchCase="4">Four</div>
+    </div>
   </div>
+  <h5>Services</h5>
+  <hr>
+  <h3> Active Users </h3>
+  <app-active-user></app-active-user>
+  <h3> Inactive Users </h3>
+  <app-inactive-user></app-inactive-user>
 </div>

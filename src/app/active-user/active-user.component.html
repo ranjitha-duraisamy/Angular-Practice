@@ -1,0 +1,5 @@
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let user of users">
+        {{ user }} | <a href="#" (click)="setToInactive($event, user)">Set to Inactive</a>
+    </li>
+</ul>
